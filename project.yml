@@ -16,7 +16,13 @@ targets:
     type: application
     platform: iOS
     sources:
-      - path: PassengerPlayer
+      - path: .
+        excludes:
+          - "**/*.md"
+          - "**/*.yml"
+          - ".github/**"
+          - "Info.plist"
+          - "build/**"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.example.passengerplayer
